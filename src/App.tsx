@@ -24,7 +24,7 @@ function App() {
 
       {/* intro section */}
       <section className="flex flex-col items-center sm:items-start text-center sm:text-start gap-6 mb-16 lg:mb-52 pt-10 px-4 sm:px-7 lg:pl-40 sm:max-w-xl lg:max-w-4xl">
-        <h1 className="text-[40px] sm:text-[72px] leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold sm:pb-16">
+        <h1 className="text-[40px] sm:text-[72px] lg:text-headerXL leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold sm:pb-16">
           Nice to <br className="hidden sm:block lg:hidden" /> meet you!{" "}
           <br className="block sm:hidden" />
           I'm{" "}
@@ -42,7 +42,7 @@ function App() {
       <hr className="h-[1px] mx-4 sm:mx-7 lg:mx-40" />
 
       {/* skills section */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center sm:text-start gap-6 my-10 px-4 sm:px-7 lg:px-40">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center sm:text-start gap-6 my-10 lg:my-20 px-4 sm:px-7 lg:px-40">
         {Skills.sort(
           (a: (typeof Skills)[number], b: (typeof Skills)[number]) =>
             a.year - b.year
@@ -61,9 +61,9 @@ function App() {
       <hr className="h-[1px] mx-4 sm:hidden" />
 
       {/* projects section */}
-      <section className="flex flex-col gap-10 my-16 px-4 sm:px-7 lg:px-40">
+      <section className="flex flex-col gap-10 my-16 lg:my-40 px-4 sm:px-7 lg:px-40">
         <div className="flex items-center justify-between">
-          <h1 className="text-[40px] sm:text-[72px] leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold">
+          <h1 className="text-[40px] sm:text-[72px] lg:text-headerXL leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold">
             Projects
           </h1>
           <ButtonComponent text="CONTACT ME" />
@@ -87,10 +87,10 @@ function App() {
       </section>
 
       {/* contact section */}
-      <section className="py-16 bg-darkGrey px-4 sm:px-7 lg:px-40">
-        <div className="sm:w-[445px] mx-auto lg:flex lg:justify-between">
+      <section className="bg-darkGrey py-16 px-4 sm:px-7 lg:px-40">
+        <div className="sm:w-[445px] lg:w-full mx-auto lg:flex lg:justify-between">
           <div className="text-center lg:text-start mb-12 lg:w-[445px]">
-            <h2 className="text-[40px] sm:text-[72px] leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold pb-5">
+            <h2 className="text-[40px] sm:text-[72px] lg:text-headerXL leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold pb-5">
               Contact
             </h2>
             <p className="text-base sm:text-bodyL leading-bodyL font-medium text-grey">
@@ -115,9 +115,9 @@ function App() {
               placeholder="EMAIL"
             />
             <TextareaComponent
-              name="email"
-              id="email"
-              placeholder="EMAIL"
+              name="message"
+              id="message"
+              placeholder="MESSAGE"
             />
 
             <div className="flex justify-end pt-8">
@@ -129,7 +129,7 @@ function App() {
 
       <hr className="h-[1px] mx-4 sm:mx-7 lg:mx-40" />
 
-      <section className="py-16 bg-darkGrey px-4">
+      <section className="py-16 lg:py-0 lg:pb-24 lg:pt-12 bg-darkGrey px-4">
         <HeaderComponent />
       </section>
     </>
