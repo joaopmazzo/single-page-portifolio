@@ -41,11 +41,11 @@ export const Skills: SkillProp[] = [
     year: 2020,
   },
   {
-    name: "Relational Databases",
+    name: "SQL",
     year: 2017,
   },
   {
-    name: "Non Relational Databases",
+    name: "No SQL",
     year: 2021,
   },
   {

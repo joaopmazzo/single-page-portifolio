@@ -35,7 +35,7 @@ const ProjectContainerComponent = ({
         </div>
       </div>
 
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-8 lg:hidden">
         <ButtonComponent text="VIEW PROJECT" />
         <ButtonComponent text="VIEW CODE" />
       </div>
