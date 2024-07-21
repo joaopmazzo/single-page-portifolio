@@ -7,7 +7,9 @@ import {
   TextareaComponent,
 } from "@components/shared/forms";
 
-import { Skills } from "enums/Skills";
+import { Skills } from "./enums/Skills";
+
+import MockupTestThumbnail from "@assets/thumbs/thumbnail-project-1-small.webp";
 
 function App() {
   const differenceInYearsToSkillLearnDate = (skillLearnDate: number) => {
@@ -44,8 +46,8 @@ function App() {
         {Skills.sort(
           (a: (typeof Skills)[number], b: (typeof Skills)[number]) =>
             a.year - b.year
-        ).map((element: (typeof Skills)[number]) => (
-          <div>
+        ).map((element: (typeof Skills)[number], index: number) => (
+          <div key={index}>
             <h1 className="text-[40px] leading-headerL tracking-headerL font-bold px-4">
               {element.name}
             </h1>
@@ -69,7 +71,7 @@ function App() {
 
         <div>
           <ProjectContainerComponent
-            imgSrc="./assets/thumb/thumbnail-project-1-small.webp"
+            imgSrc={MockupTestThumbnail}
             imgAlt="project thumbnail"
             title="DESIGN PORTIFOLIO"
             technologiesUsed={["React", "Tailwind CSS", "Netlify"]}
@@ -79,7 +81,7 @@ function App() {
 
       {/* contact section */}
       <section className="py-16 bg-darkGrey px-4">
-        <div className="text-center">
+        <div className="text-center mb-12">
           <h2 className="text-headerL leading-headerL tracking-headerL font-bold pb-5">
             Contact
           </h2>
