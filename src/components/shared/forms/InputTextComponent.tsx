@@ -16,7 +16,7 @@ const InputTextComponent = ({
       id={id}
       placeholder={placeholder}
       className="bg-transparent rounded-none outline-none
-          w-full border-b-[1px] border-white pb-4 px-6 text-bodyL leading-bodyL font-medium
+          w-full border-b-[1px] border-white pb-4 px-6 text-base sm:text-bodyL leading-bodyL font-medium
           focus:border-green"
     />
   );
