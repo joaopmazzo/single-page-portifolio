@@ -24,7 +24,7 @@ function App() {
 
       {/* intro section */}
       <section className="flex flex-col items-center sm:items-start text-center sm:text-start gap-6 mb-16 lg:mb-52 pt-10 px-4 sm:px-7 lg:pl-40 sm:max-w-xl lg:max-w-4xl">
-        <h1 className="text-[40px] sm:text-headerXL leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold sm:pb-16">
+        <h1 className="text-[40px] sm:text-[72px] leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold sm:pb-16">
           Nice to <br className="hidden sm:block lg:hidden" /> meet you!{" "}
           <br className="block sm:hidden" />
           I'm{" "}
@@ -48,7 +48,7 @@ function App() {
             a.year - b.year
         ).map((element: (typeof Skills)[number], index: number) => (
           <div key={index}>
-            <h1 className="text-[32px] leading-headerL tracking-headerL font-bold px-4">
+            <h1 className="text-[32px] sm:text-headerL leading-headerL sm:leading-headerL tracking-headerL sm:tracking-headerL font-bold">
               {element.name}
             </h1>
             <p className="text-base sm:text-bodyL leading-bodyL font-medium text-grey">
@@ -63,7 +63,7 @@ function App() {
       {/* projects section */}
       <section className="flex flex-col gap-10 my-16 px-4 sm:px-7 lg:px-40">
         <div className="flex items-center justify-between">
-          <h1 className="text-[40px] sm:text-headerXL leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold">
+          <h1 className="text-[40px] sm:text-[72px] leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold">
             Projects
           </h1>
           <ButtonComponent text="CONTACT ME" />
@@ -88,9 +88,9 @@ function App() {
 
       {/* contact section */}
       <section className="py-16 bg-darkGrey px-4 sm:px-7 lg:px-40">
-        <div className="mx-auto lg:flex lg:justify-between">
+        <div className="sm:w-[445px] mx-auto lg:flex lg:justify-between">
           <div className="text-center lg:text-start mb-12 lg:w-[445px]">
-            <h2 className="text-[40px] sm:text-headerXL leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold pb-5">
+            <h2 className="text-[40px] sm:text-[72px] leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold pb-5">
               Contact
             </h2>
             <p className="text-base sm:text-bodyL leading-bodyL font-medium text-grey">
