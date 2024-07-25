@@ -22,7 +22,7 @@ function App() {
 
         {/* intro section */}
         <section
-          className="bg-pattern-rings bg-no-repeat lg:bg-[position:-10%_15%] sm:bg-[position:-600%_0%]
+          className="bg-pattern-rings bg-no-repeat bg-[position:240%_10%] sm:bg-[position:-600%_0%] lg:bg-[position:-10%_15%]
           flex flex-col items-center sm:items-start text-center sm:text-start gap-6
           mb-16 lg:mb-52 pt-10 px-4 sm:px-7 lg:pt-32 lg:pl-40 sm:max-w-xl lg:max-w-4xl"
         >
@@ -48,7 +48,7 @@ function App() {
 
         {/* skills section */}
         <section
-          className="bg-pattern-rings bg-no-repeat lg:bg-[position:120%_100%] sm:bg-[position:210%_100%]
+          className="bg-pattern-rings bg-no-repeat bg-[position:-140%_100%] sm:bg-[position:210%_100%] lg:bg-[position:120%_100%]
           grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center sm:text-start gap-6
           my-10 lg:mt-20 lg:mb-0 px-4 sm:px-7 lg:px-40"
         >
@@ -100,7 +100,7 @@ function App() {
         </section>
       </div>
 
-      <div className="bg-darkGrey bg-pattern-rings bg-no-repeat lg:bg-[position:-10%_50%] sm:bg-[position:-120%_70%]">
+      <div className="bg-darkGrey bg-pattern-rings bg-no-repeat bg-[position:220%_60%] sm:bg-[position:-120%_70%] lg:bg-[position:-10%_50%]">
         {/* contact section */}
         <section className=" py-16 px-4 sm:px-7 lg:px-40">
           <div className="sm:w-[445px] lg:w-full mx-auto lg:flex lg:justify-between">
