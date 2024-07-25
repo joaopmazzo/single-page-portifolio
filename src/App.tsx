@@ -21,7 +21,11 @@ function App() {
         <HeaderComponent />
 
         {/* intro section */}
-        <section className="bg-pattern-rings bg-no-repeat bg-[position:-10%_15%] flex flex-col items-center sm:items-start text-center sm:text-start gap-6 mb-16 lg:mb-52 pt-10 px-4 sm:px-7 lg:pt-32 lg:pl-40 sm:max-w-xl lg:max-w-4xl">
+        <section
+          className="bg-pattern-rings bg-no-repeat lg:bg-[position:-10%_15%] sm:bg-[position:-600%_0%]
+          flex flex-col items-center sm:items-start text-center sm:text-start gap-6
+          mb-16 lg:mb-52 pt-10 px-4 sm:px-7 lg:pt-32 lg:pl-40 sm:max-w-xl lg:max-w-4xl"
+        >
           <h1 className="text-[40px] sm:text-[72px] lg:text-headerXL leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold sm:pb-16">
             Nice to <br className="hidden sm:block lg:hidden" /> meet you!{" "}
             <br className="block sm:hidden" />
@@ -43,7 +47,11 @@ function App() {
         <hr className="h-[1px] mx-4 sm:mx-7 lg:mx-40" />
 
         {/* skills section */}
-        <section className="bg-pattern-rings bg-no-repeat bg-[position:120%_100%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center sm:text-start gap-6 my-10 lg:mt-20 lg:mb-0 px-4 sm:px-7 lg:px-40">
+        <section
+          className="bg-pattern-rings bg-no-repeat lg:bg-[position:120%_100%] sm:bg-[position:210%_100%]
+          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center sm:text-start gap-6
+          my-10 lg:mt-20 lg:mb-0 px-4 sm:px-7 lg:px-40"
+        >
           {Skills.sort(
             (a: (typeof Skills)[number], b: (typeof Skills)[number]) =>
               a.year - b.year,
@@ -63,7 +71,10 @@ function App() {
         <hr className="h-[1px] mx-4 sm:hidden" />
 
         {/* projects section */}
-        <section className="flex flex-col gap-10 py-16 lg:scroll-py-36 px-4 sm:px-7 lg:px-40">
+        <section
+          className="flex flex-col gap-10
+          py-16 lg:py-36 px-4 sm:px-7 lg:px-40"
+        >
           <div className="flex items-center justify-between">
             <h1 className="text-[40px] sm:text-[72px] lg:text-headerXL leading-headerL sm:leading-headerXL tracking-headerL sm:tracking-headerXL font-bold">
               Projects
@@ -89,7 +100,7 @@ function App() {
         </section>
       </div>
 
-      <div className="bg-pattern-rings bg-no-repeat bg-[position:-10%_50%] bg-darkGrey">
+      <div className="bg-darkGrey bg-pattern-rings bg-no-repeat lg:bg-[position:-10%_50%] sm:bg-[position:-120%_70%]">
         {/* contact section */}
         <section className=" py-16 px-4 sm:px-7 lg:px-40">
           <div className="sm:w-[445px] lg:w-full mx-auto lg:flex lg:justify-between">
@@ -130,7 +141,7 @@ function App() {
 
         <hr className="h-[1px] mx-4 sm:mx-7 lg:mx-40" />
 
-        <section className="py-16 lg:py-0 lg:pb-24 lg:pt-12 bg-darkGrey px-4">
+        <section className="py-16 lg:py-0 lg:pb-24 lg:pt-12 px-4">
           <HeaderComponent />
         </section>
       </div>
