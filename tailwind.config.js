@@ -10,6 +10,10 @@ export default {
         grey: "hsl(0, 0%, 85%)",
         white: "hsl(0, 0%, 100%)",
       },
+      backgroundImage: {
+        "pattern-cicle": "url('/src/assets/backgrounds/pattern-circle.svg')",
+        "pattern-rings": "url('/src/assets/backgrounds/pattern-rings.svg')",
+      },
       fontFamily: {
         SpaceGrotesk: ["Space Grotesk", "sans-serif"],
       },
